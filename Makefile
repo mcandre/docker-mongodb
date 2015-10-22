@@ -1,4 +1,4 @@
-IMAGE=mcandre/docker-mongodb:3.0.7
+IMAGE=mcandre/docker-mongodb:2.6.11
 
 all: run
 
