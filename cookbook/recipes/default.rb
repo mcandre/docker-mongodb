@@ -7,7 +7,7 @@
 include_recipe 'mongodb'
 
 mongodb_instance 'mongodb' do
-  version '3.0'
+  version '3.0.7'
 end
 
 service 'mongodb' do
