@@ -8,13 +8,13 @@ https://registry.hub.docker.com/u/mcandre/docker-mongodb/
 
 ```
 $ make
-docker exec d99700bc3939caa4c509f333764c325851a048ece38ec39bbd7f745b9ced220c mongo --eval 'db.animals.insert({ "name": "cat" })'
+docker exec 498664ac372ab27a80bb6d047bf58022cd2104c9ef38388d55e2d61f111d703b mongo --eval 'db.animals.insert({ "name": "cat" })'
 MongoDB shell version: 2.4.9
 connecting to: test
-docker exec d99700bc3939caa4c509f333764c325851a048ece38ec39bbd7f745b9ced220c mongo --eval 'db.animals.find().forEach(function (result) { printjson(result); })'
+docker exec 498664ac372ab27a80bb6d047bf58022cd2104c9ef38388d55e2d61f111d703b mongo --eval 'db.animals.find().forEach(function (result) { printjson(result); })'
 MongoDB shell version: 2.4.9
 connecting to: test
-{ "_id" : ObjectId("5628e56de81b24f0a3e1f756"), "name" : "cat" }
+{ "_id" : ObjectId("5628f7c3a12d0e91bf25ddf0"), "name" : "cat" }
 ```
 
 # REQUIREMENTS
