@@ -21,5 +21,10 @@ clean-layers:
 
 clean: clean-containers clean-images clean-layers
 
+foodcritic:
+	foodcritic cookbook/
+
+lint: foodcritic
+
 publish:
 	docker push $(IMAGE)
