@@ -8,4 +8,4 @@ RUN git config --global user.name name && \
 RUN knife cookbook site install -z mongodb && \
     chef-client -z --runlist 'recipe[cookbook]'
 EXPOSE 27017
-ENTRYPOINT /usr/bin/mongod --config /etc/mongodb.conf run
+ENTRYPOINT ["/usr/bin/mongod", "--config", "/etc/mongodb.conf", "run"]
